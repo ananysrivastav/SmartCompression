@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#define MAX_CHARS 256
+#include "frequency.h"
+#include "common.h"
 
 void calculateFrequency(const char *filename, int freq[]) {
     FILE *fp = fopen(filename, "r");
