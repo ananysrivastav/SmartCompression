@@ -1,3 +1,6 @@
+#include "code_generation.h"
+#include "common.h"
+
 void generateCodes(Node *root, char *code, int depth, char codes[][MAX_CHARS]) {
     if (!root) return;
 
