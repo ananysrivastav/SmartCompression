@@ -7,6 +7,9 @@
 
 #define MAX_CHARS 256
 
+// Add the file size function prototype
+long getFileSize(const char *filename);
+
 typedef struct Node {
     char ch;
     int freq;
