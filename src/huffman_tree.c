@@ -1,3 +1,7 @@
+#include "huffman_tree.h"
+#include "min_heap.h"
+#include "common.h"
+
 Node* buildHuffmanTree(int freq[]) {
     MinHeap *heap = createMinHeap(MAX_CHARS);
     for (int i = 0; i < MAX_CHARS; i++) {
@@ -14,6 +18,7 @@ Node* buildHuffmanTree(int freq[]) {
         insertHeap(heap, merged);
     }
 
-    return extractMin(heap);
+    Node* root = extractMin(heap);
+    freeMinHeap(heap);
+    return root;
 }
-
