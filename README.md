@@ -26,9 +26,36 @@ The project reads an input file, calculates character frequencies, builds an opt
 
 You need a C compiler installed (like `gcc`).
 
-### 1. Create the Input File
+### Terminal Usage Preview
 
-The program expects an input file named `input.txt` to be present in the root directory.
+To build and run the project, follow these steps in your terminal:
+
+1.  **Create Input File:** The project requires a file named `input.txt`.
+    ```bash
+    echo "This is a sample file to compress." > input.txt
+    ```
+
+2.  **Compile:** Compile all source files (`src/*.c`) and include headers (`-I include`).
+    ```bash
+    gcc src/*.c -I include -o SmartCompression
+    ```
+
+3.  **Run:** Execute the program. It automatically compresses `input.txt` to `encoded.txt` and then decodes it to `decoded.txt`.
+    ```bash
+    ./SmartCompression
+    ```
+
+### Output
+
+After running, two new files will appear in the root directory:
+* `encoded.txt`: The raw binary code output.
+* `decoded.txt`: The reconstructed, original text.
+
+***
+
+## 🧹 Cleanup
+
+To remove the compiled executable and the generated output files:
 
 ```bash
-echo "This is a sample file to be compressed." > input.txt
+rm -f SmartCompression encoded.txt decoded.txt
