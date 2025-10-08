@@ -14,7 +14,7 @@ The project reads an input file, calculates character frequencies, builds an opt
 | :--- | :--- | :--- |
 | **src/** | C Source Code (Implementation) | `main.c`, `frequency.c`, `min_heap.c`, `huffman_tree.c`, `code_generation.c`, `encoding.c`, `decoding.c` |
 | **include/** | C Header Files (Prototypes/Definitions) | `common.h`, `frequency.h`, `min_heap.h`, `huffman_tree.h`, `code_generation.h`, `encoding.h`, `decoding.h` |
-| **docs/** | Project Documentation/Reports | `project_progress_report.pdf` |
+| **docs/** | Project Documentation/Reports | `PROJECT_PROPOSAL_DS_.docx` |
 
 *Note: The executable (`SmartCompression`), the input file (`input.txt`), and the output files (`encoded.txt`, `decoded.txt`) reside in the root directory.*
 
