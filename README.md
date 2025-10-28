@@ -42,7 +42,8 @@ To build and run the project for a **realistic compression test**, follow these 
 2.  **Compile:** Compile all source files, **including the new `common_utils.c`**, and link headers.
 
     ```bash
-    gcc src/*.c src/common_utils.c -I include -o SmartCompression
+    gcc *.c -o SmartCompression
+
     ```
 
 3.  **Run:** Execute the program. The runtime output will automatically display the file size comparison and compression summary.
